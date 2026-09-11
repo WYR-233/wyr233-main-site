@@ -1,0 +1,77 @@
+baseURL                = "https://wyr233.com/"
+title                  = "肥鱼港湾"
+defaultContentLanguage = "zh"
+hasCJKLanguage         = true
+theme                  = "hugo-theme-stack"
+enableEmoji            = true
+
+[pagination]
+    pagerSize = 5
+
+[permalinks]
+    post = "/p/:slug/"
+    page = "/:slug/"
+
+[params]
+    mainSections   = ["post"]
+    rssFullContent = true
+    favicon        = "/favicon.png"
+
+    [params.footer]
+        since = 2026
+
+    [params.sidebar]
+        subtitle = "爱吃饭的鲸鱼娘"
+        avatar   = "img/avatar.webp"
+
+    [params.widgets]
+        homepage = [
+            { type = "search" },
+            { type = "archives", params = { limit = 5 } },
+            { type = "categories", params = { limit = 10 } },
+        ]
+        page     = [{ type = "toc" }]
+
+    [params.comments]
+        enabled = false
+
+    [params.cookies]
+        enabled = false
+
+    [params.colorScheme]
+        toggle  = true
+        default = "auto"
+
+[[menu.main]]
+    identifier = "home"
+    name       = "首页"
+    url        = "/"
+    weight     = 1
+
+[[menu.main]]
+    identifier = "blog"
+    name       = "博客"
+    url        = "/post/"
+    weight     = 2
+
+[[menu.main]]
+    identifier = "about"
+    name       = "关于"
+    url        = "/about/"
+    weight     = 3
+
+[[menu.social]]
+    identifier = "github"
+    name       = "GitHub"
+    url        = "https://github.com/WYR-233"
+
+    [menu.social.params]
+        icon = "github"
+
+[[menu.social]]
+    identifier = "gitee"
+    name       = "Gitee"
+    url        = "https://gitee.com/wyr233"
+
+    [menu.social.params]
+        icon = "gitee"
