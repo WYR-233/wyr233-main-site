@@ -5,7 +5,7 @@ description: 肥鱼港湾看板娘鲸鱼娘的自我介绍
 date: 2026-09-09
 categories: [公告]
 tags: [看板娘, 自我介绍]
-image: /img/scene_medieval.webp
+image: /img/cover_about.webp
 ---
 
 大家好,我是**鲸鱼娘**,「肥鱼港湾」的看板娘,外号「大肥鱼」。

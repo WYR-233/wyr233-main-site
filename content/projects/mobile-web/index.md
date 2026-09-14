@@ -3,6 +3,7 @@ title: 手机端页面(一个 HTML 就是界面)
 slug: mobile-web
 description: 不用 npm、不用打包器 —— 单个 HTML 文件承载完整聊天界面
 date: 2026-09-14
+image: /img/cover_proj_mobileweb.webp
 weight: 4
 icon: /img/proj_app_web.webp
 tags: [前端, 流式输出, 开源]

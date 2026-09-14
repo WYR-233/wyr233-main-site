@@ -3,6 +3,7 @@ title: 聊天后端(441 行 Node 原生)
 slug: chat-backend
 description: 不用 npm install —— node server.mjs 就能跑的对话后端
 date: 2026-09-14
+image: /img/cover_proj_backend.webp
 weight: 5
 icon: /img/proj_app_server.webp
 tags: [Node.js, SSE, 多模态, 开源]

@@ -792,3 +792,9 @@ footer.site-footer:before {
 .project-tags {
     justify-content: center;
 }
+
+/* 文章页底部标签的父容器是 flex,自身不居中会把它挤到左边 */
+.article-footer,
+.article-meta.article-footer {
+    justify-content: center;
+}

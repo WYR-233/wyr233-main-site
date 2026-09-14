@@ -3,6 +3,7 @@ title: dsh-mini 极简发行包
 slug: dsh-mini
 description: 一个 exe 双击就能用的 AI 助手 —— 单文件、免安装、无需管理员权限
 date: 2026-09-14
+image: /img/cover_proj_dshmini.webp
 weight: 1
 icon: /img/proj_dshmini.webp
 tags: [DeepSeek Harness, Windows, 开源]

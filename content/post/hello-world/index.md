@@ -5,7 +5,7 @@ description: WYR233 的个人小站正式上线
 date: 2026-09-09
 categories: [公告]
 tags: [开张, 站点]
-image: /img/scene_rice.webp
+image: /img/cover_hello.webp
 ---
 
 「肥鱼港湾」正式开张——这是 **WYR233** 的个人小站。
