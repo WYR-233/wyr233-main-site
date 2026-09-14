@@ -5,7 +5,7 @@ description: 从半透明残图到干净抠像——鲸鱼娘立绘的绿幕方�
 date: 2026-09-13
 categories: [技术]
 tags: [ComfyUI, AI绘画, 抠图]
-image: /img/whale_maid.webp
+image: /img/cover_greenscreen.webp
 ---
 
 ## 问题:AI 画出来的人物,边缘总有白纱

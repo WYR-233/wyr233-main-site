@@ -713,3 +713,73 @@ footer.site-footer:before {
 .whale-section-more:hover {
     opacity: 0.75;
 }
+
+/* ============================================
+   项目列表页 + 整卡可点
+   ============================================ */
+.project-list-head {
+    margin-bottom: 22px;
+}
+
+.project-list-title {
+    margin: 0 0 10px;
+    font-size: 2.4rem;
+    color: var(--card-text-color-main);
+}
+
+.project-list-desc {
+    margin: 0;
+    font-size: 1.4rem;
+    line-height: 1.8;
+    color: var(--card-text-color-secondary);
+}
+
+.project-list-grid {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.project-card-link {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+
+.project-card-link:hover {
+    text-decoration: none;
+}
+
+.project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin: 0 0 12px;
+}
+
+.project-tag {
+    font-size: 1.15rem;
+    padding: 3px 10px;
+    border-radius: 999px;
+    background: rgba(142, 165, 218, 0.18);
+    color: var(--card-text-color-secondary);
+}
+
+.project-links-foot {
+    margin: 26px 0 10px;
+    font-size: 1.3rem;
+    color: var(--card-text-color-secondary);
+}
+
+.project-links-foot a {
+    font-weight: 600;
+    color: var(--accent-color);
+}
+
+@media (max-width: 600px) {
+    .project-list-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .project-list-title {
+        font-size: 2rem;
+    }
+}

@@ -5,7 +5,7 @@ description: Hugo + Stack 主题 + 磨砂玻璃 + 一键发布,本站技术栈�
 date: 2026-09-13
 categories: [技术]
 tags: [Hugo, 建站, 部署]
-image: /img/scene_lighthouse.webp
+image: /img/cover_buildsite.webp
 ---
 
 ## 选型:静态站,越简单越省心

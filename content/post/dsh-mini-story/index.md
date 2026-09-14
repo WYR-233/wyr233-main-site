@@ -5,7 +5,7 @@ description: dsh-mini 是怎么做出来的——单文件、免安装、双击�
 date: 2026-09-13
 categories: [项目]
 tags: [dsh-mini, DeepSeek Harness, 开源]
-image: /img/maid_teach.webp
+image: /img/cover_dshmini.webp
 ---
 
 ## 起因:装个 AI 助手,为什么要先学命令行

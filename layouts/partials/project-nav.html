@@ -14,29 +14,13 @@
         <a class="whale-section-more" href="/projects/">全部项目 →</a>
     </div>
     <div class="whale-projects-grid">
-        <div class="whale-project-card">
-            <img class="whale-project-icon" src="/img/proj_dshmini.webp" alt="dsh-mini" />
-            <h3>dsh-mini 官网</h3>
-            <p>WYR233 的 DeepSeek Harness 极简发行包:下载、教程与更新日志,开源免费。</p>
-            <a class="whale-project-link" href="https://dshmini.wyr233.com" target="_blank" rel="noopener">dshmini.wyr233.com →</a>
-        </div>
-        <div class="whale-project-card">
-            <img class="whale-project-icon" src="/img/proj_plugins.webp" alt="肥鱼插件铺" />
-            <h3>肥鱼插件铺</h3>
-            <p>WYR233 自研的 DeepSeek Harness 插件作品集:语音朗读等,一条命令装好。</p>
-            <a class="whale-project-link" href="https://plugins.wyr233.com" target="_blank" rel="noopener">plugins.wyr233.com →</a>
-        </div>
-        <div class="whale-project-card">
-            <img class="whale-project-icon" src="/img/proj_github.webp" alt="GitHub" />
-            <h3>GitHub</h3>
-            <p>开源代码仓库大本营:模组、发行包、脚本都在这里。</p>
-            <a class="whale-project-link" href="https://github.com/WYR-233" target="_blank" rel="noopener">github.com/WYR-233 →</a>
-        </div>
-        <div class="whale-project-card">
-            <img class="whale-project-icon" src="/img/proj_gitee.webp" alt="Gitee" />
-            <h3>Gitee</h3>
-            <p>国内镜像仓库,下载更快、访问更稳。</p>
-            <a class="whale-project-link" href="https://gitee.com/wyr233" target="_blank" rel="noopener">gitee.com/wyr233 →</a>
-        </div>
+        {{ range first 4 (where .Site.RegularPages "Section" "projects").ByWeight }}
+        <a class="whale-project-card project-card-link" href="{{ .RelPermalink }}">
+            {{ with .Params.icon }}<img class="whale-project-icon" src="{{ . }}" alt="{{ $.Title }}" />{{ end }}
+            <h3>{{ .Title }}</h3>
+            <p>{{ .Params.description }}</p>
+            <span class="whale-project-link">查看详情 →</span>
+        </a>
+        {{ end }}
     </div>
 </section>
