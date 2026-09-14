@@ -1,0 +1,36 @@
+{{ define "body-class" }}template-archives{{ end }}
+{{ define "main" }}
+    <header>
+        {{- $taxonomy := $.Site.GetPage "taxonomyTerm" "categories" -}}
+        {{- $terms := $taxonomy.Pages -}}
+        {{ if $terms }}
+        <h2 class="section-title">{{ T "widget.categoriesCloud.title" }}</h2>
+        <div class="whale-projects-grid">
+            {{ range $terms }}
+            <a class="whale-project-card project-card-link" href="{{ .RelPermalink }}">
+                {{ with .Params.icon }}<img class="whale-project-icon" src="{{ . }}" alt="{{ $.Title }}" />{{ end }}
+                <h3>{{ .Title }}</h3>
+                <p>{{ len .Pages }} 篇文章</p>
+                <span class="whale-project-link">查看分类 →</span>
+            </a>
+            {{ end }}
+        </div>
+        {{ end }}
+    </header>
+
+    {{ $pages := partial "helper/pages.html" .Site.Home }}
+
+    {{ range $pages.GroupByDate "2006" }}
+    {{ $id := lower (replace .Key " " "-") }}
+    <div class="archives-group" id="{{ $id }}">
+        <h2 class="archives-date section-title"><a href="{{ $.RelPermalink }}#{{ $id }}">{{ .Key }}</a></h2>
+        <div class="article-list--compact">
+            {{ range .Pages }}
+                {{ partial "article-list/compact" . }}
+            {{ end }}
+        </div>
+    </div>
+    {{ end }}
+
+    {{ partialCached "footer/footer" . }}
+{{ end }}
