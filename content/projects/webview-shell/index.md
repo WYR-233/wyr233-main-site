@@ -4,6 +4,7 @@ slug: webview-shell
 description: 把网页装进一个真正的 App —— 独立图标、返回键、相册相机、长连接推送
 date: 2026-09-14
 weight: 3
+icon: /img/proj_app_phone.webp
 tags: [Android, WebView, 推送, 开源]
 links:
   - title: GitHub

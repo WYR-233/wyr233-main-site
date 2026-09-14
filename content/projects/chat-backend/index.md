@@ -4,6 +4,7 @@ slug: chat-backend
 description: 不用 npm install —— node server.mjs 就能跑的对话后端
 date: 2026-09-14
 weight: 5
+icon: /img/proj_app_server.webp
 tags: [Node.js, SSE, 多模态, 开源]
 links:
   - title: GitHub

@@ -783,3 +783,12 @@ footer.site-footer:before {
         font-size: 2rem;
     }
 }
+
+/* ============================================
+   标签居中(文章页 / 项目卡)
+   ============================================ */
+.article-tags,
+.article-category,
+.project-tags {
+    justify-content: center;
+}
