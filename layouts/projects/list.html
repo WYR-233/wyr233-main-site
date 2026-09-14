@@ -7,17 +7,20 @@
 
     <section class="whale-projects-grid project-list-grid">
         {{ range .Pages.ByWeight }}
-        <a class="whale-project-card project-card-link" href="{{ .RelPermalink }}">
-            {{ with .Params.icon }}<img class="whale-project-icon" src="{{ . }}" alt="{{ $.Title }}" />{{ end }}
-            <h3>{{ .Title }}</h3>
-            <p>{{ .Params.description }}</p>
-            {{ with .Params.tags }}
-            <div class="project-tags">
-                {{ range . }}<span class="project-tag">{{ . }}</span>{{ end }}
-            </div>
-            {{ end }}
-            <span class="whale-project-link">查看详情 →</span>
-        </a>
+        <div class="project-card-wrap">
+            <a class="whale-project-card project-card-link" href="{{ .RelPermalink }}">
+                {{ with .Params.icon }}<img class="whale-project-icon" src="{{ . }}" alt="{{ $.Title }}" />{{ end }}
+                <h3>{{ .Title }}</h3>
+                <p>{{ .Params.description }}</p>
+                {{ with .Params.tags }}
+                <div class="project-tags">
+                    {{ range . }}<span class="project-tag">{{ . }}</span>{{ end }}
+                </div>
+                {{ end }}
+                <span class="whale-project-link">查看详情 →</span>
+            </a>
+            {{ with .Params.site }}<a class="project-site-btn" href="{{ . }}" target="_blank" rel="noopener" title="直达官网">官网 ↗</a>{{ end }}
+        </div>
         {{ end }}
     </section>
 

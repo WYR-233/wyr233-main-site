@@ -798,3 +798,35 @@ footer.site-footer:before {
 .article-meta.article-footer {
     justify-content: center;
 }
+
+/* ============================================
+   项目卡上的「官网 ↗」直链按钮
+   ============================================ */
+.project-card-wrap {
+    position: relative;
+    display: flex;
+}
+
+.project-card-wrap .whale-project-card {
+    width: 100%;
+}
+
+.project-site-btn {
+    position: absolute;
+    top: 14px;
+    right: 14px;
+    z-index: 3;
+    font-size: 1.15rem;
+    font-weight: 700;
+    padding: 4px 12px;
+    border-radius: 999px;
+    background: linear-gradient(135deg, #e0c899, #c5a468);
+    color: #10204d;
+    box-shadow: 0 4px 12px rgba(197, 164, 104, 0.35);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.project-site-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 18px rgba(197, 164, 104, 0.5);
+}

@@ -3,6 +3,7 @@ title: 肥鱼插件铺
 slug: dsh-plugins
 description: 给 DeepSeek Harness 写的小插件 —— 装上就能用,零构建、源码看得懂
 date: 2026-09-14
+site: https://plugins.wyr233.com
 image: /img/cover_proj_plugins.webp
 weight: 2
 icon: /img/proj_plugins.webp
