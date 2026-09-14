@@ -14,7 +14,7 @@
         <a class="whale-section-more" href="/projects/">全部项目 →</a>
     </div>
     <div class="whale-projects-grid">
-        {{ range first 4 (where .Site.RegularPages "Section" "projects").ByWeight }}
+        {{ range (where .Site.RegularPages "Section" "projects").ByWeight }}
         <a class="whale-project-card project-card-link" href="{{ .RelPermalink }}">
             {{ with .Params.icon }}<img class="whale-project-icon" src="{{ . }}" alt="{{ $.Title }}" />{{ end }}
             <h3>{{ .Title }}</h3>
