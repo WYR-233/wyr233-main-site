@@ -6,7 +6,7 @@ node_modules/
 .DS_Store
 Thumbs.db
 
-# 工作产物(不入库)
+# work artifacts (not tracked)
 preview/
 gen-img/
 _bak*/
