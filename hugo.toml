@@ -8,6 +8,9 @@ enableEmoji            = true
 [pagination]
     pagerSize = 5
 
+[markup.goldmark.renderer]
+    unsafe = true
+
 [permalinks]
     post = "/p/:slug/"
     page = "/:slug/"
@@ -21,7 +24,7 @@ enableEmoji            = true
         since = 2026
 
     [params.sidebar]
-        subtitle = "爱吃饭的鲸鱼娘"
+        subtitle = "WYR233 的小站 · 看板娘鲸鱼娘"
         avatar   = "img/avatar.webp"
 
     [params.widgets]
@@ -55,10 +58,16 @@ enableEmoji            = true
     weight     = 2
 
 [[menu.main]]
+    identifier = "projects"
+    name       = "项目"
+    url        = "/projects/"
+    weight     = 3
+
+[[menu.main]]
     identifier = "about"
     name       = "关于"
     url        = "/about/"
-    weight     = 3
+    weight     = 4
 
 [[menu.social]]
     identifier = "github"
@@ -75,3 +84,12 @@ enableEmoji            = true
 
     [menu.social.params]
         icon = "gitee"
+
+[[menu.social]]
+    identifier = "bilibili"
+    name       = "B站"
+    url        = "https://b23.tv/GsSXUxW"
+
+    [menu.social.params]
+        icon = "bilibili"
+        newTab = true

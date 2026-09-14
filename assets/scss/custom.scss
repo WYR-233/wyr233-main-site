@@ -403,6 +403,20 @@ footer.site-footer:before {
     box-shadow: 0 14px 34px rgba(30, 70, 110, 0.18);
 }
 
+.whale-project-icon {
+    width: 86px;
+    height: 86px;
+    object-fit: contain;
+    margin-bottom: 10px;
+    display: block;
+    filter: drop-shadow(0 4px 10px rgba(30, 70, 110, 0.18));
+    transition: transform 0.25s ease;
+}
+
+.whale-project-card:hover .whale-project-icon {
+    transform: translateY(-3px) scale(1.06);
+}
+
 .whale-project-badge {
     width: 46px;
     height: 46px;
@@ -593,6 +607,57 @@ footer.site-footer:before {
     margin: 4px 6px;
 }
 
+/* ============================================
+   找到我(分享卡)
+   ============================================ */
+.whale-findme {
+    display: grid;
+    grid-template-columns: minmax(0, 460px);
+    justify-content: center;
+    gap: 22px;
+    margin: 16px 0 14px;
+    align-items: start;
+}
+
+.whale-findme-card {
+    display: block;
+    border-radius: 18px;
+    overflow: hidden;
+    background: var(--card-background);
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    box-shadow: 0 10px 30px rgba(16, 32, 77, 0.16);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.whale-findme-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 16px 38px rgba(16, 32, 77, 0.24);
+}
+
+.whale-findme-card img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.whale-findme-card .qq-dark {
+    display: none;
+}
+
+[data-scheme="dark"] .whale-findme-card .qq-light {
+    display: none;
+}
+
+[data-scheme="dark"] .whale-findme-card .qq-dark {
+    display: block;
+}
+
+@media (max-width: 600px) {
+    .whale-findme {
+        grid-template-columns: 1fr;
+    }
+}
+
 @media (max-width: 600px) {
     :root {
         --container-padding: 16px;
@@ -607,4 +672,44 @@ footer.site-footer:before {
     .site-footer {
         border-radius: 14px;
     }
+}
+
+/* ============================================
+   页脚社交行
+   ============================================ */
+.site-social {
+    margin-top: 6px;
+    font-size: 1.25rem;
+}
+
+.site-social a {
+    font-weight: 600;
+    color: var(--accent-color);
+}
+
+/* ============================================
+   区块标题行(标题 + 全部项目入口)
+   ============================================ */
+.whale-section-head {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 12px;
+    margin: 0 0 16px;
+}
+
+.whale-section-head .whale-section-title {
+    margin: 0;
+}
+
+.whale-section-more {
+    flex-shrink: 0;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--accent-color);
+    transition: opacity 0.2s ease;
+}
+
+.whale-section-more:hover {
+    opacity: 0.75;
 }

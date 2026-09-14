@@ -1,0 +1,40 @@
+{{/* 三件套项目卡片 —— 放在模板里而不是 markdown 里，
+     因为 markdown 里的多行 HTML 只要有 4 空格缩进就会被当成代码块转义（2026-09-14 踩） */}}
+<div class="whale-projects">
+  <div class="whale-projects-grid">
+
+    <div class="whale-project-card">
+      <div class="whale-project-badge">🐋</div>
+      <h3>Android 壳</h3>
+      <p>把网页装进一个真正的 App。独立图标、返回键、相册与相机、跟随系统深浅色，还有自建的长连接推送。</p>
+      <p>· 手写 RFC6455 WebSocket，<b>不引第三方库</b><br>
+         · 国产 ROM 保活引导（vivo / 小米 / 华为 / 联想）<br>
+         · Android 15 适配：前台服务类型、键盘避让</p>
+      <a class="whale-project-link" href="https://github.com/WYR-233/webview-shell" target="_blank" rel="noopener">源码 GitHub</a> ·
+      <a class="whale-project-link" href="https://gitee.com/wyr233/webview-shell" target="_blank" rel="noopener">国内镜像 Gitee</a>
+    </div>
+
+    <div class="whale-project-card">
+      <div class="whale-project-badge">📱</div>
+      <h3>手机端页面</h3>
+      <p>一个 HTML 文件就是完整界面，不用 npm、不用打包器，丢到静态服务器就能用。</p>
+      <p>· 流式回复，边生成边显示<br>
+         · 发图自动压缩上传<br>
+         · 亮暗双主题，跟随系统</p>
+      <a class="whale-project-link" href="https://github.com/WYR-233/webview-shell" target="_blank" rel="noopener">源码 GitHub</a> ·
+      <a class="whale-project-link" href="https://gitee.com/wyr233/webview-shell" target="_blank" rel="noopener">国内镜像 Gitee</a>
+    </div>
+
+    <div class="whale-project-card">
+      <div class="whale-project-badge">⚙️</div>
+      <h3>聊天后端</h3>
+      <p>441 行 Node 原生代码，不用 <code>npm install</code>，<code>node server.mjs</code> 就能跑。</p>
+      <p>· SSE 流式对话 + 多模态（图片直喂模型）<br>
+         · 内容寻址图床（上传自动去重）<br>
+         · 可选：用 markdown 卡片做跨对话长期记忆</p>
+      <a class="whale-project-link" href="https://github.com/WYR-233/webview-shell" target="_blank" rel="noopener">源码 GitHub</a> ·
+      <a class="whale-project-link" href="https://gitee.com/wyr233/webview-shell" target="_blank" rel="noopener">国内镜像 Gitee</a>
+    </div>
+
+  </div>
+</div>
