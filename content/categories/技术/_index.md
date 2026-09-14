@@ -1,5 +1,5 @@
 ---
 title: 技术
-icon: /img/proj_github.webp
+icon: /img/cat_tech.webp
 image: /img/cover_greenscreen.webp
 ---
